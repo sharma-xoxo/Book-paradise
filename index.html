@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booksky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Book Paradise</h1>
+    </div>
+    <div class="container">
+        <div class="box-container">
+            <h2>Rich dad poor dad</h2>
+            <h3>Robert</h3>
+            <p> The book contrasts the financial philosophies and habits of Kiyosaki's two father figures: his biological father, a well-educated but financially struggling man, and his best friend’s father, a wealthy entrepreneur with a limited formal education. Through these contrasting perspectives, Kiyosaki discusses key financial principles such as the importance of financial literacy, investing in assets, entrepreneurship, and the difference between working for money and having money work for you.</p>
+            <button onclick="deleteelement(event)">delete</button>
+        </div>
+        
+    </div>
+    <div class="popup-overlay"></div>
+    <div class="popup-box">
+    <h2>Add Book</h2>
+    <form >
+        <input type="text" onclick="remove()" placeholder="Book Title" id="book-title-input">
+        <input type="text" placeholder="Book Author" id="book-author-input">
+        <textarea type="text" placeholder="short description" id="book-description-input"></textarea>
+        <button id="add-book">ADD</button>
+        <button id="cancel-popup">CANCEL</button>
+    </form>
+    </div>
+
+    <button class="add-button" id="id-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
